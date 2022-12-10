@@ -5,12 +5,12 @@ public class Bus extends Transport implements Competing{
         super(brand, model, engineVolume);
     }
     @Override
-    public void startMoving() {
+    public void start() {
         System.out.println("Автобус " + getBrand() + " " +getModel()+ " начал движение");
     }
 
     @Override
-    public void finishMoving() {
+    public void stop() {
         System.out.println("Автобус " + getBrand() + " " +getModel()+ " закончил движение");
     }
 

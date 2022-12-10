@@ -1,7 +1,5 @@
 package transport;
 
-import java.text.DecimalFormat;
-
 public abstract class Transport {
     private String brand;
     private String model;
@@ -35,10 +33,6 @@ public abstract class Transport {
             this.engineVolume = engineVolume;
         } else this.engineVolume = 1.5F;
     }
-    public abstract void startMoving();
-    public abstract void finishMoving();
-    //    @Override
-//    public String toString() {
-//        return brand + " " + model + ", объем двигателя: " + engineVolume;
-//    }
+    public abstract void start();
+    public abstract void stop();
 }
